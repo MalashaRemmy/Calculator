@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="calculator">
+      <!-- Display Section -->
+      <div class="display-section">
+        <div class="calc-brand">
+          <i class="fas fa-calculator"></i>
+          <span>MATH PRO</span>
+        </div>
+        <div id="display" class="display">0</div>
+        <div id="expression" class="expression"></div>
+      </div>
+
+      <!-- Buttons Grid -->
+      <div class="buttons">
+        <!-- Row 1: Clear and Operators -->
+        <button class="btn operator clear" data-action="clear">
+          <span>AC</span>
+        </button>
+        <button class="btn operator backspace" data-action="backspace">
+          <i class="fas fa-delete-left"></i>
+        </button>
+        <button class="btn operator" data-operator="/">
+          <i class="fas fa-divide"></i>
+        </button>
+        <button class="btn operator" data-operator="*">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Row 2: 7 8 9 - -->
+        <button class="btn number" data-number="7">7</button>
+        <button class="btn number" data-number="8">8</button>
+        <button class="btn number" data-number="9">9</button>
+        <button class="btn operator" data-operator="-">
+          <i class="fas fa-minus"></i>
+        </button>
+
+        <!-- Row 3: 4 5 6 + -->
+        <button class="btn number" data-number="4">4</button>
+        <button class="btn number" data-number="5">5</button>
+        <button class="btn number" data-number="6">6</button>
+        <button class="btn operator plus" data-operator="+">
+          <i class="fas fa-plus"></i>
+        </button>
+
+        <!-- Row 4: 1 2 3 = (spanning 2 rows) -->
+        <button class="btn number" data-number="1">1</button>
+        <button class="btn number" data-number="2">2</button>
+        <button class="btn number" data-number="3">3</button>
+        <button class="btn equals" data-action="equals">
+          <i class="fas fa-equals"></i>
+        </button>
+
+        <!-- Row 5: 0 . (spanning 2 columns) -->
+        <button class="btn number zero" data-number="0">0</button>
+        <button class="btn decimal" data-action="decimal">
+          <i class="fas fa-period"></i>
+          <span>.</span>
+        </button>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div class="memory-indicator">
+          <i class="fas fa-memory"></i>
+          <span id="memory-status">No Memory</span>
+        </div>
+        <div class="keyboard-hint">
+          <i class="fas fa-keyboard"></i>
+          <span>Keyboard Enabled</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Instructions -->
+    <div class="instructions">
+      <h3><i class="fas fa-lightbulb"></i> User Tips</h3>
+      <ul>
+        <li>Press <kbd>Esc</kbd> to clear</li>
+        <li>Press <kbd>Enter</kbd> for equals</li>
+        <li>Press <kbd>Backspace</kbd> to undo</li>
+        <li>You can also use keyboard numbers & operators without directly clicking the your calculator buttons</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="Calculator.js"></script>
+</body>
+</html>
