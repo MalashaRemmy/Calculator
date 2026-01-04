@@ -33,11 +33,11 @@ The display is a visual output only — it does not control logic.
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
-calculator/
-│
-├── index.html # Semantic structure
-├── style.css # Layout and visual styling
-├── script.js # State management and logic
-└── README.md # Documentation
+calculator\
+- index.html # Semantic structure
+- style.css # Layout and visual styling
+- script.js # State management and logic
+- README.md # Documentation
+
